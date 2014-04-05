@@ -176,12 +176,12 @@ int clarusSwCreateCode(JsonNode *code) {
 	if(strcmp(id, "-1") == 0 || unit == -1 || state == -1) {
 		logprintf(LOG_ERR, "clarus_switch: insufficient number of arguments");
 		return EXIT_FAILURE;
-	} else if((int)(id[0]) < 65 || (int)(id[0]) > 69) {
+/*	} else if((int)(id[0]) < 65 || (int)(id[0]) > 69) {
 		logprintf(LOG_ERR, "clarus_switch: invalid id range");
 		return EXIT_FAILURE;
 	} else if(atoi(&id[1]) < 0 || atoi(&id[1]) > 31) {
 		logprintf(LOG_ERR, "clarus_switch: invalid id range");
-		return EXIT_FAILURE;
+		return EXIT_FAILURE;*/
 	} else if(unit > 63 || unit < 0) {
 		logprintf(LOG_ERR, "clarus_switch: invalid unit range");
 		return EXIT_FAILURE;
